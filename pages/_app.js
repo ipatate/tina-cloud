@@ -31,8 +31,8 @@ function MyApp({ Component, pageProps }) {
 export default withTina(MyApp, {
   apis: {
     tina: new Client({
-      realm: "zmf-resources",
-      clientId: "3d2o2rldla21nos01tq7i9gslc",
+      realm: process.env.NEXT_PUBLIC_ORGANIZATION_NAME,
+      clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
     }),
   },
   sidebar: true,
