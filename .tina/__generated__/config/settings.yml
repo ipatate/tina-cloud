@@ -1,0 +1,11 @@
+---
+sections:
+  - path: content/posts
+    label: Posts
+    name: posts
+    templates:
+      - post
+    type: directory
+    create: documents
+    match: '**/*.md'
+    new_doc_ext: md
